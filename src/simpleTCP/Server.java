@@ -10,6 +10,7 @@ import java.net.Socket;
 public class Server {
 
 	public Server() throws Exception {
+		
 		ServerSocket serverSocket = new ServerSocket(6969); //opening a new port.
 		System.out.println("Port 6969 is open");
 		
@@ -24,6 +25,7 @@ public class Server {
 		String message = inSocket.readLine();
 		System.out.println("Client says: " + message);
 		
+		serverSocket.close();
 		socket.close();
 		System.out.println("Socket is closed");
 				
@@ -33,6 +35,7 @@ public class Server {
 		
 		try {
 			new Server();
+			
 		} catch (Exception e) {
 			//TODO exception 
 			e.printStackTrace();
