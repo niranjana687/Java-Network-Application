@@ -37,7 +37,7 @@ public class Server {
 			new Server();
 			
 		} catch (Exception e) {
-			//TODO exception 
+			//TODO: handle exception 
 			e.printStackTrace();
 		}
 	}

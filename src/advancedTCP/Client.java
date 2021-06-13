@@ -36,7 +36,7 @@ public class Client {
 			new Client();
 			
 		} catch (Exception e) {
-			//TODO exception
+			//TODO: handle exception
 			e.printStackTrace();
 		}
 	}
